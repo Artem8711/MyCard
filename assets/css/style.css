@@ -3,6 +3,10 @@
    box-sizing: border-box;
 }
 
+html {
+   background: linear-gradient(to bottom, #c8f0ec 10%, #e9fbf9 60%, #fdfefe 100%);
+}
+
 body {
    font-family: sans-serif;
    line-height: 1.2;
@@ -16,17 +20,23 @@ a {
 i {
    cursor: pointer;
 }
+
+p,
+h2 {
+   color: #434545;
+}
 /*часть форматирования */
 
 .UserCard {
-   max-width: 300px;
+   max-width: 425px;
    width: 100%;
    min-width: auto;
    margin: 50px auto;
    border-radius: 30px;
-   box-shadow: 0px 0px 12px silver;
+   box-shadow: 0px 0px 20px silver;
    overflow: hidden;
    text-align: center;
+   background-color: #fcfffffd;
 }
 
 .bg {
@@ -37,6 +47,9 @@ i {
    text-align: right;
 }
 
+.content {
+   padding: 0 1em 1em;
+}
 .avatar {
    width: 125px;
    height: 125px;
@@ -45,4 +58,41 @@ i {
    display: inline-block;
    margin-top: -65px;
    border: 5px solid white;
+}
+
+.UserName {
+   font-size: 1.5rem;
+   font-weight: 500;
+   margin: 0.4em 0;
+}
+
+.UserCountry {
+   font-size: 1rem;
+   font-weight: 100;
+   margin: 0.5em 0;
+}
+
+.Job {
+   font-size: 1.2rem;
+   font-weight: 500;
+   margin: 0.4em 0;
+}
+
+.experience {
+   font-weight: 100;
+   font-size: 1rem;
+   margin: 1.2em;
+   margin-left: 1.5em;
+   margin-right: 1.5em;
+}
+
+.UserLink {
+   background-color: #a3a3a3fd;
+   color: #fcfffffd;
+   font-size: 1.2em;
+   border-radius: 50%;
+   padding-top: 15px;
+   width: 50px;
+   height: 50px;
+   margin: 5px 20px;
 }
